@@ -14,3 +14,4 @@ ro.lmk.log_stats=true
 
 # IORAP
 ro.iorapd.enable=true
+iorapd.perfetto.enable=true
