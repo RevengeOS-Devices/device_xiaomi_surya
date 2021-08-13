@@ -356,6 +356,7 @@ PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
 
 PRODUCT_PACKAGES += \
+    init.performance_level.rc \
     init.recovery.qcom.rc
 
 # Sensors
