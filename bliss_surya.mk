@@ -21,10 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+BLISS_BUILDTYPE := OFFICIAL
 
-PRODUCT_NAME := lineage_surya
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit GApps
+BLISS_BUILD_VARIANT := gapps
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
+# Device identifier
+PRODUCT_NAME := bliss_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 NFC
