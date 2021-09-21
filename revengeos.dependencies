@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "devices",
+    "repository": "vendor_xiaomi_surya",
+    "target_path": "vendor/xiaomi/surya",
+    "branch": "r11.0"
+  },
+  {
+    "remote": "github",
+    "repository": "silont-project/kernel_xiaomi_surya",
+    "target_path": "kernel/xiaomi/surya",
+    "branch" : "raiden"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "lineage-18.1"
+  }
+]
